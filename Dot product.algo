@@ -1,0 +1,31 @@
+PROCEDURE dot_product(ps: INTEGER, T1,T2 : ARRAY_OF INTEGER;)
+VAR
+    
+    i :INTEGER := 0;
+    ps: INTEGER:= 0;
+    
+
+BEGIN
+    FOR i FROM 0 TO 2 STEP 1  DO
+        ps:=ps + ( v1[i] * v2[i]);
+        
+    END_FOR
+    Write(ps);
+END
+
+ALGORITHM orthogonal
+VAR
+    v1 : ARRAY_OF INTEGER[3];
+    v1 : ARRAY_OF INTEGER[3];
+    i : INTEGER := 0;
+    j,n : INTEGER := 0;
+BEGIN
+
+FOR j FROM 0 TO n STEP 1  DO
+    IF (dot_product(v1[j], v2[j])=0) THEN
+        Write("two vectors of given IR are orthogonal")
+    ELSE
+        Write("two vectors of given IR are not orthogonal")
+    END_IF
+END_FOR
+END
